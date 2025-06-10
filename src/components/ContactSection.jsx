@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch(`https://cv-mailservice.onrender.com/portfolio/send-email`, {
+    const response = await fetch(`${import.meta.env.VITE_REACT_APP_BASE_URL}/portfolio/send-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
