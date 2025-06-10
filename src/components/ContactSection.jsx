@@ -16,20 +16,48 @@ import { useState } from "react";
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  try {
+    const response = await fetch(`https://cv-mailservice.onrender.com/portfolio/send-email`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-    setIsSubmitting(true);
-
-    setTimeout(() => {
+    if (response.ok) {
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
+    console.error("Contact form error:", error);
+    toast({
+      title: "Network error!",
+      description: "Unable to send message. Please try again.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -117,6 +145,8 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="Harish Prabhu..."
                 />
@@ -135,6 +165,8 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="harish@example.com"
                 />
@@ -152,6 +184,8 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
