@@ -38,7 +38,7 @@ const projects = [
     id: 4,
     title: "College Management System",
     description:
-      "A classroom-focused Android application developed using Java and Firebase. Includes features like student data management and real-time notifications.",
+      "A classroom-focused Android application developed using Java and Firebase. Includes features like student data management and real-time Database updates.",
     image: "/projects/project4.png",
     tags: ["Java", "Android Studio", "Firebase", "Figma"],
     demoUrl: "#",
@@ -95,7 +95,7 @@ export const ProjectsSection = () => {
                 </div>
 
                 <h3 className="text-xl font-bold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-justify text-sm mb-4">
+                <p className="text-muted-foreground text-justify -tracking-tighter text-sm mb-4">
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center">

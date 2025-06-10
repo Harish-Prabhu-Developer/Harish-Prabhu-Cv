@@ -71,7 +71,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+918483009220"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +91 84830 09220
@@ -136,7 +136,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="harishpraharshu@gmail.com"
+                  placeholder="harish@example.com"
                 />
               </div>
 
