@@ -20,7 +20,7 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-justify md:text-center inline-grid text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          <p className="text-md md:text-lg text-justify md:text-center inline-grid text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             I craft seamless Mobile App Developer with 7 months of experience in mobile and full-stack development, specializing in React Native and Node.js. Built a secure employee time-tracking app and integrated real-time REST APIs. Seeking to contribute my skills to build innovative tech solutions.
           </p>
 
