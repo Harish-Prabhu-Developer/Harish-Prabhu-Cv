@@ -24,17 +24,23 @@ export const HeroSection = () => {
             I craft seamless Mobile App Developer with 7 months of experience in mobile and full-stack development, specializing in React Native and Node.js. Built a secure employee time-tracking app and integrated real-time REST APIs. Seeking to contribute my skills to build innovative tech solutions.
           </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+          <div className="pt-4 opacity-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-18 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
+            <a href="#services" 
+               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4">
+                Get Our Services
+               </a>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+        <a href="#about" className="flex flex-col items-center">
+          <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
         <ArrowDown className="h-5 w-5 text-primary" />
+        </a>
       </div>
     </section>
   );
