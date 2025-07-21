@@ -25,7 +25,7 @@ const skills = [
   { name: "Docker", level: 20, category: "tools" },
   { name: "Figma", level: 85, category: "tools" },
   { name: "Postman", level: 80, category: "tools" },
-  { name: "Visual Studio Code", level: 95, category: "tools" },
+  { name: "Visual Studio Code (DotNet)", level: 50, category: "tools" },
   { name: "Android Studio", level: 70, category: "tools" },
   { name: "Firebase", level: 60, category: "tools" },
   { name: "Google Colab", level: 50, category: "tools" },
