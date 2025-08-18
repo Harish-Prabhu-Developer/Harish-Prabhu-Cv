@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:harishpraharshu@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     harishpraharshu@gmail.com
@@ -99,10 +99,10 @@ const handleSubmit = async (e) => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+918483009220"
+                    href="tel:+918438009220"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 84830 09220
+                    +91 84380 09220
                   </a>
                 </div>
               </div>
