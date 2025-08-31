@@ -3,13 +3,35 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "Milk Delivery & Ordering App",
+    description:
+      "A cross-platform mobile app built for customers and milk vendors to simplify daily milk and dairy product orders. The app provides customers with easy ordering, flexible delivery options, and order tracking, while enabling shop owners to manage sales, deliveries, routes, and reports seamlessly.",
+    image: "/projects/project1.png",
+    tags: [
+      "React Native",
+      "FCM",
+      "Redux",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "TailwindCSS",
+      "NativeWind",
+      "Postman"
+    ],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Harish-Prabhu-Developer/Milk-Shop-App",
+  },
+  {
+    id: 2,
     title: "Task Management Application",
     description:
       "An enterprise-level task management application featuring real-time collaboration, role-based access control, analytics, and a cross-platform experience with web and mobile interfaces.",
-    image: "/projects/project1.png",
+    image: "/projects/project2.png",
     tags: [
       "React",
       "React Native",
+      "Redux",
       "TailwindCSS",
       "Node.js",
       "Express.js",
@@ -22,22 +44,22 @@ const projects = [
     githubUrl: "https://github.com/Harish-Prabhu-Developer/Task_Mobile_App",
   },
   {
-    id: 2,
+    id: 3,
     title: "TimeSheet Mobile Application",
     description:
       "A cross-platform time-tracking app developed using React Native and Node.js. Includes Two-Factor Authentication (TFA) and OTP via Nodemailer, REST API integration, and role-based access control.",
-    image: "/projects/project2.png",
+    image: "/projects/project3.png",
     tags: ["React Native", "Expo", "REST API", "Figma", "Postman"],
     demoUrl: "#",
     githubUrl:
       "https://github.com/Harish-Prabhu-Developer/Time_Sheet_ReactNative",
   },
   {
-    id: 3,
+    id: 4,
     title: "IPL Match Winner Prediction",
     description:
       "A machine learning model to predict IPL match outcomes using historical data. Utilized K-Means for clustering, and multiple classifiers including Random Forest (99.89% accuracy), Decision Tree, Logistic Regression, and Naive Bayes. Built with scikit-learn, pandas, and NumPy on Google Colab.",
-    image: "/projects/project3.png",
+    image: "/projects/project4.png",
     tags: [
       "Python",
       "Machine Learning",
@@ -51,11 +73,11 @@ const projects = [
       "https://github.com/Harish-Prabhu-Developer/IPL_Match_Winner_Prediction",
   },
   {
-    id: 4,
+    id: 5,
     title: "College Management System",
     description:
       "A classroom-focused Android application developed using Java and Firebase. Includes features like student data management and real-time Database updates.",
-    image: "/projects/project4.png",
+    image: "/projects/project5.png",
     tags: ["Java", "Android Studio", "Firebase", "Figma"],
     demoUrl: "#",
     githubUrl:
