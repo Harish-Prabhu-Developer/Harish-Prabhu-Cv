@@ -1,5 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const cron = require("cron");
+const https = require("https");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -9,6 +11,20 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+// Cron Job
+const job =new cron.CronJob("*/14 * * * *", function(){
+    https.get(process.env.API_URL,(res)=>{
+          console.log("Now Working Time : ", new Date().toUTCString());
+          
+        if(res.statusCode === 200) console.log("GET request sent successfully");
+        else console.log("GET request failed",res.statusCode);
+        
+    }).on("error", (error) => {
+        console.error("Error while sending request : ", error);
+    });
+});
+
+job.start();
 app.post("/portfolio/send-email", async (req, res) => {
   const { name, email, message } = req.body;
 
