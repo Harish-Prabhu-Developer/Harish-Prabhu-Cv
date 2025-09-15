@@ -71,20 +71,20 @@ export const AboutSection = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold animate-fade-in">
-              Passionate Mobile App Developer & Full-Stack Technologist
+              Passionate Full Stack Mobile App Developer
             </h3>
 
             <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-1">
-              With over 7 months of experience in mobile and web development, I
-              specialize in building intuitive, responsive, and high-performance
-              applications using modern technologies across the full stack.
+              I’m a <strong>Full Stack Mobile App Developer</strong> with 
+              <strong> 7 months of internship experience</strong> in mobile and full-stack development. 
+              I specialize in building secure, real-time applications using 
+              <strong> React Native</strong> and <strong> Node.js</strong>.
             </p>
 
             <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-2">
-              I'm driven by the challenge of turning complex problems into
-              simple, elegant solutions. Constantly evolving with the tech
-              landscape, I stay ahead by learning, experimenting, and delivering
-              scalable digital experiences.
+              I’m passionate about turning complex problems into simple, elegant solutions. 
+              Continuously learning and experimenting with new technologies, 
+              I strive to deliver scalable, high-performance digital experiences.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-3">

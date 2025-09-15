@@ -8,38 +8,45 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm </span>
+          {/* Heading */}
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+            <span className="opacity-0 animate-fade-in">Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              HARISH
+              {" "}HARISH
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              PRABHU
+              {" "}PRABHU
             </span>
           </h1>
 
-          <p className="text-md md:text-lg text-justify md:text-center inline-grid text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I craft seamless Mobile App Developer with 7 months of experience in mobile and full-stack development, specializing in React Native and Node.js. Built a secure employee time-tracking app and integrated real-time REST APIs. Seeking to contribute my skills to build innovative tech solutions.
-          </p>
+        {/* Subtitle */}
+        <p className="text-md md:text-lg text-center text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          I’m a <strong>Full Stack Mobile App Developer</strong> with <strong>7 months of internship experience</strong> 
+          {' '}in mobile and full-stack development. I specialize in <strong>React Native</strong> and 
+          <strong> Node.js</strong>, building secure, real-time applications with seamless user experiences.
+        </p>
 
-          <div className="pt-4 opacity-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-18 animate-fade-in-delay-4">
+
+          {/* Buttons */}
+          <div className="pt-4 opacity-0 flex flex-col md:flex-row items-center justify-center gap-4 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
-            <a href="#services" 
-               className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4">
-                Get Our Services
-               </a>
+            <a
+              href="#services"
+              className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4"
+            >
+              Get My Services
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
         <a href="#about" className="flex flex-col items-center">
-          <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-        <ArrowDown className="h-5 w-5 text-primary" />
+          <span className="text-sm text-muted-foreground mb-2">Scroll</span>
+          <ArrowDown className="h-5 w-5 text-primary" />
         </a>
       </div>
     </section>

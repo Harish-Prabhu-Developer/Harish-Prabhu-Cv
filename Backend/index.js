@@ -26,7 +26,7 @@ app.post("/portfolio/send-email", async (req, res) => {
     const mailOptions = {
       from: `"${name}" <${email}>`,
       to: process.env.EMAIL_USER, // Your email address
-      subject: "New Contact Message",
+      subject: "New Contact Message Form Portfolio",
       html: `
         <h3>New Message from Portfolio</h3>
         <p><strong>Name:</strong> ${name}</p>
