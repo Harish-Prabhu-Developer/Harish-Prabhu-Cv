@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://harishprabhu.netlify.app/sitemap.xml
