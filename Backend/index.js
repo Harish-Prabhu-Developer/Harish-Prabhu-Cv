@@ -31,12 +31,17 @@ app.post("/portfolio/send-email", async (req, res) => {
   try {
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: "smtp.gmail.com", // or use smtp
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false, // true for port 465, false for port 587
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+  requireTLS: true,
+  connectionTimeout: 10000 // optional, set timeout in ms
+});
+
 
     // Email content
     const mailOptions = {
