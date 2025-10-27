@@ -31,7 +31,7 @@ app.post("/portfolio/send-email", async (req, res) => {
   try {
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: "gmail", // or use smtp
+      service: "smtp.gmail.com", // or use smtp
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
