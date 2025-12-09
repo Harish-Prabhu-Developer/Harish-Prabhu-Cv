@@ -88,7 +88,7 @@ const projects = [
   title: "Tournament Entry Platform",
   description:
     "A full-stack MERN application deployed on Hostinger with Nginx reverse proxy configuration. The platform enables tournament organizers to manage player entries, academy submissions, and event operations with a secure and scalable architecture.",
-  image: "/projects/project-tournament.png",
+  image: "/projects/project6.png",
   tags: ["MERN STACK", "Hostinger", "Nginx", "PMS"],
   demoUrl: "https://lionssportsfoundation.org/",
   githubUrl: "#"
